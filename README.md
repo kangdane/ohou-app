@@ -50,22 +50,27 @@ python main.py
 이 명령어는 main.py에서 정의된 자동화 테스트를 실행합니다. 이 코드에서는 로그인과 광고 팝업 처리 등의 동작을 자동으로 수행합니다.
 
 
-# ohou_project/
-│── config.py          # 설정 정보 (Appium 서버, 앱 정보 등)
-│── driver.py          # WebDriver 설정 및 초기화
-│── main.py            # 테스트 실행 파일
-│── pages/             # 페이지 객체 모델(POM) 관련 파일들
-│   ├── ad_popup.py    # 광고 팝업 처리 관련 클래스
-│   ├── base_page.py   # 기본 페이지 클래스 (공통 동작 정의)
-│   └── login_page.py  # 로그인 페이지 관련 동작 정의
-│── tests/             # 실제 테스트 파일들
-│   └── test_login.py  # 로그인 테스트 (예시)
-│── utils/             # 공통 함수들 및 유틸리티들
-│   ├── logger.py      # 로깅 유틸리티
-│   ├── helper.py      # 공통 함수 모음
-│   └── appium_server.py  # Appium 서버 실행/종료 유틸리티 (예: server start/stop 자동화)
-│── .gitignore         # Git 무시 파일
-│── requirements.txt   # 필수 라이브러리 목록
+
+## 프로젝트 구조
+
+```plaintext
+ohou_project/
+│── config.py            # 설정 정보 (Appium 서버, 앱 정보 등)
+│── driver.py            # WebDriver 설정 및 초기화
+│── main.py              # 테스트 실행 파일
+│── pages/               # 페이지 객체 모델(POM) 관련 파일들
+│   ├── ad_popup.py      # 광고 팝업 처리 관련 클래스
+│   ├── base_page.py     # 기본 페이지 클래스 (공통 동작 정의)
+│   └── login_page.py    # 로그인 페이지 관련 동작 정의
+│── tests/               # 실제 테스트 파일들
+│   └── test_login.py    # 로그인 테스트 (예시)
+│── utils/               # 공통 함수들 및 유틸리티들
+│   ├── logger.py        # 로깅 유틸리티
+│   ├── helper.py        # 공통 함수 모음
+│   └── appium_server.py # Appium 서버 실행/종료 유틸리티 (예: server start/stop 자동화)
+│── .gitignore           # Git 무시 파일
+│── requirements.txt     # 필수 라이브러리 목록
+```
 
 ## 문제 해결
 Appium 서버가 시작되지 않음: Appium이 정상적으로 설치되었는지 확인하고, npm install -g appium으로 최신 버전을 설치해 주세요.
