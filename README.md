@@ -85,8 +85,6 @@ ohou_project/
 │── tests/               # 실제 테스트 파일들
 │   └── test_login.py    # 로그인 테스트 (예시)
 │── utils/               # 공통 함수들 및 유틸리티들
-│   ├── logger.py        # 로깅 유틸리티
-│   ├── helper.py        # 공통 함수 모음
 │   └── appium_server.py # Appium 서버 실행/종료 유틸리티 (예: server start/stop 자동화)
 │── .gitignore           # Git 무시 파일
 │── requirements.txt     # 필수 라이브러리 목록
